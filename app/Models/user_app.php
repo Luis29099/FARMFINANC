@@ -10,17 +10,22 @@ class user_app extends Model
     return $this->belongsToMany('App\Models\crop');
 }
 
-    public function recommendation(){
+    public function recommendations(){
         return $this->hasMany('App\Models\recommendation');
         
     }
-    public function finances(){
-        return $this->belongsToMany('App\Models\finance');
+    // public function finances(){
+    //     return $this->belongsToMany('App\Models\finance');
         
-    }
-    public function animal_production(){
+    // }
+    public function finances()
+{
+    return $this->belongsToMany(finance::class, 'finance_user_apps', 'id_user', 'id_finances');
+}
+    public function animal_productions(){
         return $this->hasMany('App\Models\animal_production');
         
     }
+ 
 
 }

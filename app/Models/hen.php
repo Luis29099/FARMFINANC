@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class hen extends Model
 {
-    public function animal_productions(){
+    public function animal_production(){
         return $this->belongsTo('App\Models\animal_production');
         
     }
+    
 
 }

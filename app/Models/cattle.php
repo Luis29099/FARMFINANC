@@ -10,4 +10,5 @@ class cattle extends Model
         return $this->belongsTo('App\Models\animal_production');
         
     }
+    
 }

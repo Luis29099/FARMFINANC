@@ -17,12 +17,7 @@ return new class extends Migration
             $table->string('expense');
             $table->string('profit');
             $table->date('date');
-            $table->unsignedBigInteger('id_user');
-             $table-> foreign('id_user')
-            ->references('id')
-            ->on('user_apps')
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
+            
              $table->unsignedBigInteger('id_animal');
             $table-> foreign('id_animal')
             ->references('id')

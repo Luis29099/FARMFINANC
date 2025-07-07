@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class animal_production extends Model
 {
-    public function users(){
+    public function user(){
         return $this->belongsTo('App\Models\user_app');
 
     }
@@ -15,15 +15,16 @@ class animal_production extends Model
 
         
     }
-    public function cattle(){
+    public function cattles(){
         return $this->hasMany('App\Models\cattle');
         
         
     }
-    public function hen(){
+    public function hens(){
         return $this->hasMany('App\Models\hen');
         
         
     }
+   
     
 }

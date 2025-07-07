@@ -10,4 +10,6 @@ class avocado_crop extends Model
         return $this->belongsTo('App\Models\crop');
 
     }
+    
+
 }

@@ -18,5 +18,6 @@ class crop extends Model
         return $this->hasOne('App\Models\coffe_crop');
         
     }
+ 
 
 }

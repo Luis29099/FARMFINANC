@@ -17,12 +17,6 @@ return new class extends Migration
             $table->string('area');
             $table->date('sowing_date');
             $table->date('harvest_date');
-            $table->unsignedBigInteger('id_user');
-            $table-> foreign('id_user')
-            ->references('id')
-            ->on('user_apps')
-            ->onDelete('cascade')
-            ->onUpdate('cascade');
             $table->timestamps();
         });
     }

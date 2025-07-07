@@ -10,4 +10,5 @@ class coffe_crop extends Model
         return $this->belongsTo('App\Models\crop');
 
     }
+    
 }

@@ -6,9 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class recommendation extends Model
 {
-     public function users(){
+     public function user(){
         return $this->belongsTo('App\Models\user_app');
         
     }
+    
    
 }
