@@ -9,6 +9,7 @@
             <tr>
                 <th>ID</th>
                 <th>Texto</th>
+                <th>Fecha </th>
                 
             </tr>
         </thead>
@@ -16,7 +17,7 @@
             <tr>
                 <td>{{ $recommendation->id }}</td>
                 <td>{{ $recommendation->text }}</td>
-                
+                <td>{{ $recommendation->date }}</td>
             </tr>
         </tbody>
     </table>

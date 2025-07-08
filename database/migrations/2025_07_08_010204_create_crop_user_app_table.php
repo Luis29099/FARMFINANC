@@ -11,19 +11,19 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('finance_user_apps', function (Blueprint $table) {
+        Schema::create('crop_user_app', function (Blueprint $table) {
             $table->id();
-             $table->unsignedBigInteger('id_user');
+            $table->unsignedBigInteger('id_user');
             $table-> foreign('id_user')
             ->references('id')
             ->on('user_apps')
             ->onDelete('cascade')
             ->onUpdate('cascade');
             
-            $table->unsignedBigInteger('id_finances');
-            $table-> foreign('id_finances')
+            $table->unsignedBigInteger('id_crop');
+            $table-> foreign('id_crop')
             ->references('id')
-            ->on('finances')
+            ->on('crops')
             ->onDelete('cascade')
             ->onUpdate('cascade');
             $table->timestamps();
@@ -35,6 +35,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('finance_user_apps');
+        Schema::dropIfExists('crop_user_app');
     }
 };

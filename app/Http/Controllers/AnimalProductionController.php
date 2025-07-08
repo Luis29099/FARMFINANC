@@ -27,6 +27,8 @@ class AnimalProductionController extends Controller
         $animalproduction = new animal_production();
         $animalproduction->type = $request->type;
         $animalproduction->quantity = $request->quantity;
+         $animalproduction->acquisition_date = $request->acquisition_date;
+        
         $animalproduction->save();
 
         return redirect()->route('animalproduction.index');
@@ -50,6 +52,7 @@ class AnimalProductionController extends Controller
     {
         $animalproduction->type = $request->type;
         $animalproduction->quantity = $request->quantity;
+        $animalproduction->acquisition_date = $request->acquisition_date;
         $animalproduction->save();
 
         return redirect()->route('animalproduction.index');

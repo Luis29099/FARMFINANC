@@ -25,6 +25,7 @@ class RecommendationController extends Controller
     {
         $recommendation = new recommendation();
         $recommendation->text = $request->text;
+        $recommendation->date = $request->date;
         
         $recommendation->save();
 
@@ -48,6 +49,7 @@ class RecommendationController extends Controller
     public function update(Request $request, recommendation $recommendation)
     {
         $recommendation->text = $request->text;
+        $recommendation->date = $request->date;
        
         $recommendation->save();
 

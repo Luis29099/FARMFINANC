@@ -18,10 +18,10 @@
             <input type="text" id="average_weight" name="average_weight" class="form-control" value="{{ old('average_weight', $cattle->average_weight) }}" required>
         </div>
 
-         {{-- <div class="mb-3">
-             <label for="use" class="form-label">Ganancias</label>
-            <input type="text" id="use" name="use" class="form-control" value="{{ old('use', $cattle->use) }}" required>
-        </div> --}}
+         <div class="mb-3">
+             <label for="use_milk_meat" class="form-label">Ganancias</label>
+            <input type="text" id="use_milk_meat" name="use_milk_meat" class="form-control" value="{{ old('use_milk_meat', $cattle->use_milk_meat) }}" required>
+        </div>
 
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>

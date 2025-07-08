@@ -18,7 +18,7 @@
 
         <div class="mb-3">
             <label for="sowing_date" class="form-label">Fecha de Plantacion</label>
-            <input type="date" id="sowing_date" name="sowing_date" class="form-control" required>
+            <input type="text" id="sowing_date" name="sowing_date" class="form-control" required>
         </div>
 
         <div class="mb-3">

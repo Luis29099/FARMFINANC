@@ -10,6 +10,7 @@
                 <th>ID</th>
                 <th>Tipo</th>
                 <th>Cantidad</th>
+                <th>Fecha De Adquisicion</th>
             </tr>
         </thead>
         <tbody>
@@ -17,6 +18,7 @@
                 <td>{{ $animalproduction->id }}</td>
                 <td>{{ $animalproduction->type }}</td>
                 <td>{{ $animalproduction->quantity }}</td>
+                <td>{{ $animalproduction->acquisition_date }}</td>
             </tr>
         </tbody>
     </table>

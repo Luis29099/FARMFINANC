@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('type');
             $table->string('quantity');
-            $table->date('acquisition_date');
-            $table->unsignedBigInteger('id_user');
-             $table-> foreign('id_user')
+            $table->string('acquisition_date');
+            $table->unsignedBigInteger('id_user_app')->nullable();
+             $table-> foreign('id_user_app')
             ->references('id')
             ->on('user_apps')
             ->onDelete('cascade')

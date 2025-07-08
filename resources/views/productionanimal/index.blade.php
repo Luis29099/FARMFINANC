@@ -12,6 +12,7 @@
                 <th>ID</th>
                 <th>Tipo</th>
                 <th>Cantidad</th>
+                <th>Fecha De Adquisicion</th>
                 <th>Detalles</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -23,6 +24,7 @@
                     <td>{{ $animalproduction->id }}</td>
                     <td>{{ $animalproduction->type }}</td>
                     <td>{{ $animalproduction->quantity }}</td>
+                    <td>{{ $animalproduction->acquisition_date }}</td>
                     <td><a href="{{ route('animalproduction.show', $animalproduction->id) }}" class="btn btn-info btn-sm">Ver</a></td>
                     <td><a href="{{ route('animalproduction.edit', $animalproduction->id) }}" class="btn btn-success btn-sm">Editar</a></td>
                     <td>

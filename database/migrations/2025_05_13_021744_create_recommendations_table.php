@@ -14,9 +14,9 @@ return new class extends Migration
         Schema::create('recommendations', function (Blueprint $table) {
             $table->id();
             $table->string('text');
-            $table->date('date');
-            $table->unsignedBigInteger('id_user');
-             $table-> foreign('id_user')
+            $table->string('date');
+            $table->unsignedBigInteger('id_user_app')->nullable();
+             $table-> foreign('id_user_app')
             ->references('id')
             ->on('user_apps')
             ->onDelete('cascade')

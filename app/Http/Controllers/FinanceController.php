@@ -27,6 +27,7 @@ class FinanceController extends Controller
         $finance->income = $request->income;
         $finance->expense = $request->expense;
         $finance->profit= $request->profit;
+        $finance->profit = $request->date;
         $finance->save();
 
         return redirect()->route('finance.index');
@@ -51,6 +52,7 @@ class FinanceController extends Controller
         $finance->income = $request->income;
         $finance->expense = $request->expense;
         $finance->profit = $request->profit;
+        $finance->profit = $request->date;
         $finance->save();
 
         return redirect()->route('finance.index');

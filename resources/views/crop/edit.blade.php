@@ -20,12 +20,12 @@
 
          <div class="mb-3">
               <label for="sowing_date" class="form-label">Fecha de Plantacion</label>
-            <input type="date" id="sowing_date" name="sowing_date" class="form-control" value="{{ old('sowing_date', $crop->sowing_date) }}" required>
+            <input type="text" id="sowing_date" name="sowing_date" class="form-control" value="{{ old('sowing_date', $crop->sowing_date) }}" required>
         </div>
 
         <div class="mb-3">
               <label for="harvest_date" class="form-label">Fecha de Plantacion</label>
-            <input type="date" id="harvest_date" name="harvest_date" class="form-control" value="{{ old('harvest_date', $crop->harvest_date) }}" required>
+            <input type="text" id="harvest_date" name="harvest_date" class="form-control" value="{{ old('harvest_date', $crop->harvest_date) }}" required>
         </div>
 
         <button type="submit" class="btn btn-primary">Actualizar</button>

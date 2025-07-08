@@ -26,7 +26,7 @@ class CattleController extends Controller
         $cattle = new cattle();
         $cattle->breed = $request->breed;
         $cattle->average_weight = $request->average_weight;
-        // $cattle->use = $request->use;
+        $cattle->use_milk_meat = $request->use_milk_meat;
         $cattle->save();
 
         return redirect()->route('cattle.index');
@@ -50,7 +50,7 @@ class CattleController extends Controller
     {
         $cattle->breed = $request->breed;
         $cattle->average_weight = $request->average_weight;
-        // $cattle->use = $request->use;
+        $cattle->use_milk_meat = $request->use_milk_meat;
         $cattle->save();
 
         return redirect()->route('cattle.index');

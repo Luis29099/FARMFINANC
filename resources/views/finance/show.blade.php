@@ -37,6 +37,7 @@
                 <strong>Ingresos:</strong> ${{ $finance->income }}<br>
                 <strong>Gastos:</strong> ${{ $finance->expense }}<br>
                 <strong>Ganancias:</strong> ${{ $finance->profit }}
+                <strong>Fecha:</strong> ${{ $finance->date }}
                 
 
             </p>

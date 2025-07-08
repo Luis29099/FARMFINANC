@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->string('breed');
             $table->string('average_weight');
-             $table->string('use (milk, meat)');
-            $table->unsignedBigInteger('id_animal');
-            $table-> foreign('id_animal')
+             $table->string('use_milk_meat');
+            $table->unsignedBigInteger('id_animal_production');
+            $table-> foreign('id_animal_production')
             ->references('id')
             ->on('animal_productions')
             ->onDelete('cascade')

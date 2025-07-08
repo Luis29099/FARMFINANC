@@ -20,7 +20,8 @@ class user_app extends Model
     // }
     public function finances()
 {
-    return $this->belongsToMany(finance::class, 'finance_user_apps', 'id_user', 'id_finances');
+    return $this->belongsToMany(finance::class);
+    
 }
     public function animal_productions(){
         return $this->hasMany('App\Models\animal_production');

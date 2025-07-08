@@ -23,7 +23,7 @@
 
         <div class="mb-3">
             <label for="birth_date" class="form-label">Cantidad</label>
-            <input type="date" id="birth_date" name="birth_date" class="form-control" required>
+            <input type="text" id="birth_date" name="birth_date" class="form-control" required>
         </div>
 
         <button type="submit" class="btn btn-success">Crear</button>

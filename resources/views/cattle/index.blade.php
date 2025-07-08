@@ -12,7 +12,7 @@
                 <th>ID</th>
                 <th>Raza</th>
                 <th>Peso Promedio</th>
-                {{-- <th>Uso</th> --}}
+                <th>Uso</th>
                 <th>Detalles</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -24,7 +24,7 @@
                     <td>{{ $cattle->id }}</td>
                     <td>{{ $cattle->breed }}</td>
                     <td>{{ $cattle->average_weight }}</td>
-                    {{-- <td>{{ $cattle->use }}</td> --}}
+                    <td>{{ $cattle->use_milk_meat }}</td>
                     <td><a href="{{ route('cattle.show', $cattle->id) }}" class="btn btn-info btn-sm">Ver</a></td>
                     <td><a href="{{ route('cattle.edit', $cattle->id) }}" class="btn btn-success btn-sm">Editar</a></td>
                     <td>

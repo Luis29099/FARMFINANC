@@ -25,7 +25,7 @@
 
         <div class="mb-3">
             <label for="birth_date" class="form-label">Fecha de Nacimiento</label>
-            <input type="date" name="birth_date" id="birth_date" class="form-control" value="{{ old('brith_date', $user->birth_date) }}" required>
+            <input type="text" name="birth_date" id="birth_date" class="form-control" value="{{ old('brith_date', $user->birth_date) }}" required>
         </div>
 
         <button type="submit" class="btn btn-primary">Actualizar</button>

@@ -11,6 +11,7 @@
             <tr>
                 <th>ID</th>
                 <th>Recomendacion</th>
+                <th>Fecha</th>
                 <th>Detalles</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -21,7 +22,7 @@
                 <tr>
                     <td>{{ $recommendation->id }}</td>
                     <td>{{ $recommendation->text }}</td>
-                    
+                    <td>{{ $recommendation->date }}</td>
                     <td><a href="{{ route('recommendation.show', $recommendation->id) }}" class="btn btn-info btn-sm">Ver</a></td>
                     <td><a href="{{ route('recommendation.edit', $recommendation->id) }}" class="btn btn-success btn-sm">Editar</a></td>
                     <td>

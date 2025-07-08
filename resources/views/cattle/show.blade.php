@@ -10,6 +10,7 @@
                 <th>ID</th>
                 <th>Raza</th>
                 <th>Peso Promedio</th>
+                <th>Uso</th>
                 
             </tr>
         </thead>
@@ -18,6 +19,7 @@
                 <td>{{ $cattle->id }}</td>
                 <td>{{ $cattle->breed }}</td>
                 <td>{{ $cattle->average_weight }}</td>
+                <td>{{$cattle->use_milk_meat}}</td>
                 
             </tr>
         </tbody>

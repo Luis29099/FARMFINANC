@@ -16,10 +16,10 @@
             <input type="text" id="average_weight" name="average_weight" class="form-control" required>
         </div>
 
-        {{-- <div class="mb-3">
-            <label for="use" class="form-label">Uso</label>
-            <input type="text" id="use" name="use" class="form-control" required>
-        </div> --}}
+        <div class="mb-3">
+            <label for="use_milk_meat" class="form-label">Uso</label>
+            <input type="text" id="use_milk_meat" name="use_milk_meat" class="form-control" required>
+        </div>
 
         <button type="submit" class="btn btn-success">Crear</button>
     </form>

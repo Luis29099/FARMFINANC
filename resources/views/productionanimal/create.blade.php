@@ -13,7 +13,11 @@
 
         <div class="mb-3">
             <label for="quantity" class="form-label">Cantidad</label>
-            <input type="number" id="quantity" name="quantity" class="form-control" required>
+            <input type="text" id="quantity" name="quantity" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="acquisition_date" class="form-label">Fecha De Adquisicion</label>
+            <input type="text" id="acquisition_date" name="acquisition_date" class="form-control" required>
         </div>
 
         <button type="submit" class="btn btn-success">Crear</button>

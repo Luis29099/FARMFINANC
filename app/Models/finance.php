@@ -12,7 +12,8 @@ class finance extends Model
 //     }
 public function userApps()
 {
-    return $this->belongsToMany(user_app::class, 'finance_user_apps', 'id_finances', 'id_user');
+    return $this->belongsToMany(user_app::class);
+    
 }
 
     public function animal_production(){

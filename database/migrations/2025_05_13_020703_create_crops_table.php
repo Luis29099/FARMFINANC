@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('area');
-            $table->date('sowing_date');
-            $table->date('harvest_date');
+            $table->string('sowing_date');
+            $table->string('harvest_date');
             $table->timestamps();
         });
     }

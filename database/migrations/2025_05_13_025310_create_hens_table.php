@@ -16,8 +16,8 @@ return new class extends Migration
             $table->string('breed');
             $table->string('daily_egg_production');
              $table->string('monthly_egg_total');
-            $table->unsignedBigInteger('id_animal');
-            $table-> foreign('id_animal')
+            $table->unsignedBigInteger('id_animal_production');
+            $table-> foreign('id_animal_production')
             ->references('id')
             ->on('animal_productions')
             ->onDelete('cascade')

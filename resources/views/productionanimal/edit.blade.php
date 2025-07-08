@@ -15,7 +15,11 @@
 
         <div class="mb-3">
             <label for="quantity" class="form-label">Cantidad</label>
-            <input type="number" name="quantity" id="quantity" class="form-control" value="{{ old('quantity', $animalproduction->quantity) }}" required>
+            <input type="text" name="quantity" id="quantity" class="form-control" value="{{ old('quantity', $animalproduction->quantity) }}" required>
+        </div>
+        <div class="mb-3">
+            <label for="acquisition_date" class="form-label">Fecha De Adquisicion</label>
+            <input type="text" name="acquisition_date" id="acquisition_date" class="form-control" value="{{ old('acquisition_date', $animalproduction->acquisition_date) }}" required>
         </div>
 
         <a href="{{ route('finance.index') }}" class="btn btn-secondary">Volver a la lista</a>

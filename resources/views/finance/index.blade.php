@@ -13,6 +13,7 @@
                 <th>Ingresos</th>
                 <th>Gastos</th>
                 <th>Ganancias</th>
+                <th>Fecha</th>
                 <th>Detalles</th>
                 <th>Editar</th>
                 <th>Eliminar</th>
@@ -25,6 +26,7 @@
                     <td>{{ $finance->income }}</td>
                     <td>{{ $finance->expense }}</td>
                     <td>{{ $finance->profit }}</td>
+                    <td>{{ $finance->date }}</td>
                     <td><a href="{{ route('finance.show', $finance->id) }}" class="btn btn-info btn-sm">Ver</a></td>
                     <td><a href="{{ route('finance.edit', $finance->id) }}" class="btn btn-success btn-sm">Editar</a></td>
                     <td>

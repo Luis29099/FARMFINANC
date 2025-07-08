@@ -22,6 +22,10 @@
              <label for="profit" class="form-label">Ganancias</label>
             <input type="text" id="profit" name="profit" class="form-control" value="{{ old('profit', $finance->profit) }}" required>
         </div>
+         <div class="mb-3">
+             <label for="date" class="form-label">Fecha</label>
+            <input type="text" id="date" name="date" class="form-control" value="{{ old('date', $finance->date) }}" required>
+        </div>
         <a href="{{ route('finance.index') }}" class="btn btn-secondary">Volver a la lista</a>
         <button type="submit" class="btn btn-primary">Actualizar</button>
     </form>

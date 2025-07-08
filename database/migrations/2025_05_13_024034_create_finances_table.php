@@ -16,10 +16,10 @@ return new class extends Migration
             $table->string('income');
             $table->string('expense');
             $table->string('profit');
-            $table->date('date');
+            $table->string('date');
             
-             $table->unsignedBigInteger('id_animal');
-            $table-> foreign('id_animal')
+             $table->unsignedBigInteger('id_animal_production');
+            $table-> foreign('id_animal_production')
             ->references('id')
             ->on('animal_productions')
             ->onDelete('cascade')

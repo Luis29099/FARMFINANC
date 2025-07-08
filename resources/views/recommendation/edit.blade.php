@@ -12,6 +12,10 @@
             <label for="text" class="form-label">Tipo</label>
             <input type="text" name="text" id="text" class="form-control" value="{{ old('text', $recommendation->text) }}" required>
         </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Tipo</label>
+            <input type="text" name="date" id="date" class="form-control" value="{{ old('date', $recommendation->date) }}" required>
+        </div>
 
         
 

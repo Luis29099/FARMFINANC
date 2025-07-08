@@ -10,6 +10,10 @@
             <label for="text" class="form-label">Tipo</label>
             <input type="text" id="text" name="text" class="form-control" required>
         </div>
+        <div class="mb-3">
+            <label for="date" class="form-label">Fecha</label>
+            <input type="text" id="date" name="date" class="form-control" required>
+        </div>
 
         
 
