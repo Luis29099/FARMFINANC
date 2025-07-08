@@ -27,7 +27,7 @@ class FinanceController extends Controller
         $finance->income = $request->income;
         $finance->expense = $request->expense;
         $finance->profit= $request->profit;
-        $finance->profit = $request->date;
+        $finance->date = $request->date;
         $finance->save();
 
         return redirect()->route('finance.index');
@@ -47,16 +47,19 @@ class FinanceController extends Controller
     }
 
    
-    public function update(Request $request, finance $finance)
-    {
-        $finance->income = $request->income;
-        $finance->expense = $request->expense;
-        $finance->profit = $request->profit;
-        $finance->profit = $request->date;
-        $finance->save();
+   public function update(Request $request, finance $finance)
+{
+    $finance->income = $request->income;
+    $finance->expense = $request->expense;
+    $finance->profit = $request->profit;
+    $finance->date = $request->date;
 
-        return redirect()->route('finance.index');
-    }
+    $finance->id_animal_production = 1; 
+
+    $finance->save();
+
+    return redirect()->route('finance.index');
+}
 
     
     public function destroy(finance $finance)

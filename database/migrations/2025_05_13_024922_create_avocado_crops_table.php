@@ -16,7 +16,7 @@ return new class extends Migration
             
             $table->string('variety');
             $table->string('estimated_production');
-              $table->unsignedBigInteger('id_crop');
+              $table->unsignedBigInteger('id_crop')->nullable();
             $table-> foreign('id_crop')
             ->references('id')
             ->on('crops')

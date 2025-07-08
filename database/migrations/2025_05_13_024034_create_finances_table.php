@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('profit');
             $table->string('date');
             
-             $table->unsignedBigInteger('id_animal_production');
+            $table->unsignedBigInteger('id_animal_production')->nullable();
             $table-> foreign('id_animal_production')
             ->references('id')
             ->on('animal_productions')
